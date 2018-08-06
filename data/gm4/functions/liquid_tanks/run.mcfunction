@@ -10,6 +10,7 @@
 function gm4:liquid_tanks/create
 function gm4:liquid_tanks/remove
 function gm4:liquid_tanks/click
+function gm4:liquid_tanks/slot
 
 #liquids
 execute if score gm4Clockticks gm4Clock matches 1 run function gm4:liquid_tanks/liquids/water
