@@ -8,4 +8,5 @@
 ##########################################
 
 scoreboard objectives add gm4LiquidTanks dummy "Liquid Tanks"
+scoreboard objectives add slot dummy
 scoreboard objectives add gm4LTclick minecraft.custom:minecraft.inspect_hopper "gm4LTclick"
