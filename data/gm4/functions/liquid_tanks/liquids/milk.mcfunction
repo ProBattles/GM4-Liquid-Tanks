@@ -23,9 +23,9 @@ execute as @e[tag=gm4LTmilk,tag=gm4LTbucketadd] run tag @s remove gm4LTslot
 execute as @e[tag=gm4LTmilk,tag=gm4LTbucketadd] run tag @s remove gm4LTbucketadd
 
 #removing
-execute as @e[tag=gm4LTmilk,tag=gm4LTslot,scores={gm4LiquidTanks=1000..30000}] at @s if block ~ ~ ~ minecraft:hopper{Items:[{Slot:4b,id:"minecraft:bucket",Count:1b}]} run tag @s add gm4LTbucketremove 
+execute as @e[tag=gm4LTmilk,tag=gm4LTslot,scores={gm4LiquidTanks=1000..30000}] at @s if block ~ ~ ~ minecraft:hopper{Items:[{Slot:0b,id:"minecraft:bucket",Count:1b}]} run tag @s add gm4LTbucketremove 
 execute as @e[tag=gm4LTmilk,tag=gm4LTbucketremove] run scoreboard players remove @s gm4LiquidTanks 1000
-execute at @e[tag=gm4LTmilk,tag=gm4LTbucketremove] run replaceitem block ~ ~ ~ container.4 minecraft:milk_bucket 1
+execute at @e[tag=gm4LTmilk,tag=gm4LTbucketremove] run replaceitem block ~ ~ ~ container.0 minecraft:milk_bucket 1
 execute as @e[tag=gm4LTmilk,tag=gm4LTbucketremove] run tellraw @p ["",{"text":"Milk: "},{"score":{"name":"@s","objective":"gm4LiquidTanks"}},{"text":"mb/30000mb"}]
 execute as @e[tag=gm4LTmilk,tag=gm4LTbucketremove] run tag @s remove gm4LTslot
 execute as @e[tag=gm4LTmilk,tag=gm4LTbucketremove] run tag @s remove gm4LTbucketremove
